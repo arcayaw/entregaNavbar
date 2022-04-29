@@ -1,10 +1,11 @@
 import React from "react";
+import Nunchibox from "../../assets/img/4.png";
 
 function Navbar() {
   return (
     <nav className="nav">
       <a href="#" className="nav__brand">
-        NunchiBox
+        <img src={Nunchibox} className="imgEnCart" alt="carro vacio" />
       </a>
       <ul className="nav__menu">
         <li className="nav__item">
