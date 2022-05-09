@@ -55,3 +55,27 @@ a {
   justify-content: space-around;
   gap: 3rem;
 }
+
+
+
+.card__container {
+  margin: 4rem auto;
+}
+
+.card__title {
+  font-size: 3rem;
+  text-align: center;
+  color: rosybrown;
+}
+
+.card__text {
+  color: gray;
+}
+
+.card__buttonStack {
+  margin: 0 35%;
+}
+
+.card__badge__text {
+  color: gray;
+}

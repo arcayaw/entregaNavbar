@@ -13,9 +13,7 @@ function Navbar2() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="m-auto nav__menu">
-            <Nav.Link href="#link" className="nav__link">
-              Box Prediseñadas
-            </Nav.Link>
+            <Nav.Link href="#link" className="nav__link"></Nav.Link>
             <Nav.Link href="#link">Arma tu Box</Nav.Link>
             <Nav.Link href="#link">FAQ's</Nav.Link>
             <Nav.Link href="#link">Contacto</Nav.Link>
