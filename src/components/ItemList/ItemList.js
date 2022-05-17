@@ -3,12 +3,13 @@ import Item from "../Item/Item";
 
 const ItemList = ({ boxesList }) => {
   return (
-    <div>
+    <>
       {boxesList.map((box) => (
         <Item box={box} key={box.id} />
       ))}
-    </div>
+    </>
   );
 };
+//meeter clases aca para hacer el el estilo dedel cart list
 
 export default ItemList;

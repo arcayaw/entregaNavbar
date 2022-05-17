@@ -57,9 +57,9 @@ a {
 }
 
 
-.card__container {
+/* .card__container {
   margin: 2rem auto;
-}
+} */
 
 .card__title {
   font-size: 3rem;
@@ -71,11 +71,17 @@ a {
   color: gray;
 }
 
-.card__buttonStack {
+/* .card__buttonStack {
   margin: 0 auto;
 
+} */
+
+/* npm  */
+
+.card {
+  display: flex;
 }
 
-.card__badge__text {
-  color: gray;
+.numeroContador {
+  color: black;
 }

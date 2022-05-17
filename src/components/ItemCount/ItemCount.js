@@ -1,19 +1,12 @@
 import React from "react";
 import { toast } from "react-toastify";
 import { Button, Stack } from "react-bootstrap";
+import { useState } from "react";
 
 /* --------------- Declaracion de nuestro functional component -------------- */
-export default function AddButton() {
+export default function ItemCount({ stock, initial }) {
   /* ----------------------- Declaracion del state hook ----------------------- */
-  const [count, setCount] = React.useState(1);
-  const stock = 3;
-
-  /* -------------- Declaracion de un Efecto sobre nuestra cuenta ------------- */
-  React.useEffect(() => {
-    if (count !== 1) {
-      console.log("Cambiaste el stock de un producto");
-    }
-  }, [count]);
+  const [count, setCount] = useState(initial);
 
   /* -------------------- Funcion para aumentar la cantidad ------------------- */
   const onAdd = () => {
@@ -53,7 +46,7 @@ export default function AddButton() {
     );
   };
   /* ------------------------- Componente presentacion ------------------------ */
-  const AddButton = ({ handleOnSubmit }) => {
+  const ItemCount = ({ handleOnSubmit }) => {
     return (
       <Button
         className="add-button"
@@ -71,7 +64,7 @@ export default function AddButton() {
           <StockButton text="-" handleOnClick={onDecrease} />
           <span className="add-button-count">{count}</span>
           <StockButton text="+" handleOnClick={onAdd} />
-          <AddButton variant="  " handleOnSubmit={onSubmit} />
+          <ItemCount variant="  " handleOnSubmit={onSubmit} />
         </Stack>
       </div>
     </>

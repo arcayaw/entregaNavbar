@@ -1,7 +1,6 @@
 import ItemList from "../ItemList/ItemList";
 import { Container, Row, Col } from "react-bootstrap";
-// import { boxes } from "../../data/boxes";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { boxes } from "../../data/boxes";
 
 export default function ItemListContainer({ title }) {
@@ -30,10 +29,10 @@ export default function ItemListContainer({ title }) {
     // eslint-disable-next-line
   }, []);
 
-  // console.log(boxesList);
+  console.log(boxesList);
 
   return (
-    <Container className="itemlist-container">
+    <Container>
       <Row>
         <Col>
           <h1>{title}</h1>
